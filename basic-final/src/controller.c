@@ -47,7 +47,7 @@ static Eina_Bool __read_motion_write_led(void *data)
 	// Send value to LED light
 	//resource_write_led(130, value);
 
-	colorpin = [32,33,34];
+	colorpin = [32,33,34];   //r,g,b색상 pin의 배열
 	resource_write_color_led(colorpin[], value);
 
 
@@ -59,7 +59,7 @@ static bool service_app_create(void *data)
 	app_data *ad = data;
 
 	// Create a timer to call the given function in the given period of time
-	ad->getter_timer = ecore_timer_add(7.0f, __read_motion_write_led, ad);
+	ad->getter_timer = ecore_timer_add(7.0f, __read_motion_write_led, ad);   //연속으로 비출 수 있는 넉넉한 시간인 7초로 변경
 
 	if (!ad->getter_timer) {
 		_E("Failed to add infrared motion getter timer");
