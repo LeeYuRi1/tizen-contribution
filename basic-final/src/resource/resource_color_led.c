@@ -2,7 +2,7 @@
 
 #include "log.h"
 
-
+//r,g,b 색상의 빛을 연속으로 빛나게 하는 코드 
 int resource_write_color_led(int pin_num[], int value)
 {
 	for (int i = 0; i < 3; i++) {
