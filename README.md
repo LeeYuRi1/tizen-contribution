@@ -2,7 +2,7 @@
 
 
 2.Apply Coding rules
-https://github.com/Samsung/TizenRT
+https://github.com/Samsung/TizenRT/pull/2318
 
 5.Module Contribution
 https://github.com/LeeYuRi1/tizen-contribution/tree/master/basic-final
